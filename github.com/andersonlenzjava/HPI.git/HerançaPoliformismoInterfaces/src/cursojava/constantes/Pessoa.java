@@ -9,6 +9,7 @@ public class Pessoa {
 	protected String numeroCpf;
 	protected String nomeMae;
 	protected String nomePai;
+	
 	protected String getNome() {
 		return nome;
 	}
