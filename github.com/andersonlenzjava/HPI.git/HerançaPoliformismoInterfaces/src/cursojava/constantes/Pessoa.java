@@ -2,7 +2,7 @@ package cursojava.constantes;
 
 //herança   | clase pai,   classe master ou superclasse. Atributos comuns a todos os objetos filhos 
 
-public class Pessoa {
+public abstract class Pessoa {
 	
 	protected String nome;
 	protected Integer idade;
@@ -12,7 +12,10 @@ public class Pessoa {
 	protected String nomeMae;
 	protected String nomePai;
 	
-	protected String getNome() {
+	//método abstrato que fica na classe pai, é obrigatória para as classes filhas 
+	public abstract double salario();
+	
+	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
