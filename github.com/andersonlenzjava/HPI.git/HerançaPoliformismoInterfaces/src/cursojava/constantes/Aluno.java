@@ -171,6 +171,14 @@ public class Aluno extends Pessoa {
 			return false;
 		return true;
 	}
+	
+	@Override
+	public boolean pessoaMaiorIdade() {
 
-
+		return idade >= 21;
+	}
+	//um método que aproveita o outro deste mesmo objeto, e faz alguma lógica e retorna algo 
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "Aluno é maior de idade " : "Aluno menor de idade";
+	}
 }
