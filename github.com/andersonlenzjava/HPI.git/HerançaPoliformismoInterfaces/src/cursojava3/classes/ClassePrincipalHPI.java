@@ -8,7 +8,9 @@ import javax.swing.JOptionPane;
 
 import cursojava.constantes.Aluno;
 import cursojava.constantes.Disciplina;
+import cursojava.constantes.Secretario;
 import cursojava.constantes.StatusAluno;
+import cursojava.interfaces.PermitirAcesso;
 
 public class ClassePrincipalHPI {
 
@@ -16,9 +18,10 @@ public class ClassePrincipalHPI {
 
 		String login = JOptionPane.showInputDialog("Informe o login");
 		String senha = JOptionPane.showInputDialog("Informe a Senha");
-
-		if (login.equalsIgnoreCase("admin") && // simples validação de permissão de acesso
-				senha.equalsIgnoreCase("admin")) {
+		
+		PermitirAcesso permitirAcesso = new Secretario(login, senha);//instânciação para permitir acionar o método
+		
+		if (permitirAcesso.autenticar()) { // se true acessa, se false não acessa
 
 			List<Aluno> alunos = new ArrayList<Aluno>();
 
@@ -94,6 +97,10 @@ public class ClassePrincipalHPI {
 				System.out.println("Resultado = " + aluno.getAlunoAprovado2() + " com média de = "
 						+ aluno.getMediaNota() + " Aluno : " + aluno.getNome());
 			}
+		} else {
+
+			JOptionPane.showMessageDialog(null, "Acesso não permitido");
+
 		}
 
 	}
