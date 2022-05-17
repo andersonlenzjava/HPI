@@ -63,4 +63,7 @@ public abstract class Pessoa {
 		return idade >= 18;
 	}
 
+	public boolean testeVerdade() {
+		return idade >= 15;
+	}
 }
