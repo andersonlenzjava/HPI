@@ -104,7 +104,7 @@ public class Aluno extends Pessoa {
 		//laço para fazer uma varedura de todos os atributos do atributo nota
 		
 		for (Disciplina disciplina : disciplinas) {
-			somaNotas += disciplina.getNota();
+			somaNotas += disciplina.getMediaNotas();
 		}
 		return somaNotas / disciplinas.size();
 	}
