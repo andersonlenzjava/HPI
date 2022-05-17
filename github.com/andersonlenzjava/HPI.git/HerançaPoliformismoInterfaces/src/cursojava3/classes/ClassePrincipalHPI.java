@@ -19,7 +19,7 @@ public class ClassePrincipalHPI {
 		String login = JOptionPane.showInputDialog("Informe o login");
 		String senha = JOptionPane.showInputDialog("Informe a Senha");
 		
-		PermitirAcesso permitirAcesso = new Secretario(login, senha);//instânciação para permitir acionar o método
+		PermitirAcesso permitirAcesso = new Secretario(login, senha);//instânciação para permitir acionar o métod
 		
 		if (permitirAcesso.autenticar()) { // se true acessa, se false não acessa
 

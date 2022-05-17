@@ -1,5 +1,7 @@
 package cursojava.constantes;
 
+import cursojava.interfaces.PermitirAcesso;
+
 public class Diretor extends Pessoa {
 
 	private String registroEducacao;
@@ -40,10 +42,8 @@ public class Diretor extends Pessoa {
 
 	@Override
 	public double salario() {
-
-		return 3900.78;
+		// TODO Auto-generated method stub
+		return 0;
 	}
-	
-	
 
 }

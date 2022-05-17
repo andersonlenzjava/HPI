@@ -11,7 +11,7 @@ public class Secretario extends Pessoa implements PermitirAcesso {
 	private String login;
 	private String senha;
 	
-	public Secretario(String login, String senha) {
+	public Secretario(String login, String senha) {//parametros recebidos em marron, e e azul atributos
 		this.login = login;
 		this.senha = senha;
 	}
@@ -56,7 +56,7 @@ public class Secretario extends Pessoa implements PermitirAcesso {
 		return 1800.80 * 1.3;
 	}
 
-//Método do contrato de autenticação 	
+//Método do contrato de autenticação|| recebe os parametros, atribui com o this, e chama o método de baixo	
 	public boolean autenticar(String login, String senha) {
 		this.login = login;
 		this.senha = senha;
