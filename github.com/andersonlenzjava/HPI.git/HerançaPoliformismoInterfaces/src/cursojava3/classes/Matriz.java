@@ -5,6 +5,7 @@ public class Matriz {
 	// executar o código java dos exercicios de matrizes
 	public static void main(String[] args) {
 
+		
 		// n1 é o numero de linhas
 		// n2 é o numero de posições do array
 
