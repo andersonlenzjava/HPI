@@ -1,4 +1,4 @@
-package cursojava3.classes;
+package Vetormatriz.java;
 
 import java.util.Arrays;
 import java.util.List;
